@@ -114,15 +114,15 @@ function checkInputs() {
         total.textContent = `Total à pagar R$: ${valueNumber}`
 
         message = `
-Menssagem automática
+Mensagem automática
 Empréstimos Pinheiro
 ------------------------------------------ 
 🔑Pix: ${pix.value}
 📅Data Empréstimo: ${date_start}
-Valor do empréstimo 🪙R$: ${formatter.format(valueBorrowed.value)}
+Valor do empréstimo 🪙${formatter.format(valueBorrowed.value)}
 -------------------------------------------   
 📅Data Pagamento: ${date_end}
-Total à pagar 🪙R$: ${valueNumber}
+Total à pagar 🪙${valueNumber}
 🔑Pix: 44773849800
 🟣: NuBank
 🧑🏻: Felipe Pinheiro
