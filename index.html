@@ -1,116 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empréstimos Pinheiro</title>
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
-    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-</head>
-<body id="body">
-    <header id="img-coins">
-        <div id="container-top-fixed" class="true">
-            <strong class="name">Felipe Pinheiro</strong>
-            <small class="p-small">Gerente de crédito informal</small>
-        </div>
-    </header>
-    
-    <main class="main">
-    
-        <div id="container-message">
-            <p class="p-slogan">Simule agora, de forma rápida e fácil. Se gostar, envie a simulação para o meu WhatsApp!</p>
-    
-            <p>O cálculo é feito com um multiplicador de <strong>1.8%.</strong></p>
-    
-            <p>Para valores abaixo de 200 o multiplicador é fixo, <strong>50%.</strong></p>
-    
-            <p>Para valores entre 200 e 700, o mínimo é de 15 dias corridos.</p>
-    
-        </div>
-    
-        <div id="scroll-down">
-            <span>Scroll Down</span>
-            <i class="ph ph-mouse-scroll"></i>
-        </div>
-    
-        <div class="container-hidden">
-    
-                <form action="" class="">
-                    <label for="pix">
-                        <small>Insira seu pix</small>
-                        
-                        <div class="inputs">
-                            <i class="ph ph-pix-logo"></i>
-                            <input type="text" name="pix" placeholder="Chave do seu pix" id="pix">
-                        </div>
-                    </label>
-
-                    <label for="value">
-                        <small>Valor R$</small>
-                        <div class="inputs">
-                            <i class="ph ph-coins"></i>
-                            <input placeholder="ex.: 1500 (Números inteiros)" type="number" name="value" id="value" autocomplete="off">
-                        </div>
-                    </label>
-    
-                    <div id="container-dates">
-                        <label for="startDate">
-                            <small>Data para o empréstimo</small>
-                            <div class="inputs">
-                                <i class="ph ph-calendar"></i>
-                                <input type="text" id="startDate" autocomplete="off"/>
-                            </div>
-                        </label>
-    
-                        <label for="endDate">
-                            <small>Data para pagar</small>
-                            <div class="inputs">
-                                <i class="ph ph-calendar"></i>
-                                <input type="text" id="endDate" autocomplete="off"/>
-                            </div>
-                        </label>
-                    </div>
-    
-    
-                    <button id="button-calc">Simular</button>
-                </form>
-    
-                <div class="calc">
-                    <div id="percent-calc-tot">
-                        <p class="days"></p>
-                        <p class="percent-div"></p>
-                        <p class="total"></p>
-                        <p class="date-div"></p>
-                    </div>
-       
-                    <div id="message">
-                        <small>Preview da mensagem</small>
-                        <p id="preview">
-    
-                        </p>
-    
-                        <button id="whats">
-                            Enviar WhatsApp!
-                        </button>
-                    </div>
-
-                    <canvas id="myBarChart" width="250" height="250"></canvas>
-                </div>
-            </div>
-        </main>
-    
-    <!-- Inicialização do Pikaday -->
-    <script src="./index.js" defer></script>
-</body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felipe Pinheiro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
